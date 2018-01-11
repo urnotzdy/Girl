@@ -1,0 +1,40 @@
+package com.imooc.domain;
+
+import org.hibernate.annotations.Generated;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+/**
+ * Description:
+ * User: zhangdanyang
+ * Date: 2018/1/4 15:12.
+ */
+@Entity
+public class Girl {
+
+    @Id
+    @GeneratedValue
+    Integer id;
+    Integer age;
+
+    public Girl() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+}
