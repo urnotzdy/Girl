@@ -19,6 +19,7 @@ public class HelloController {
 
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public String say(){
+        System.out.println("git_2");
         return  pepole.getName();
     }
 
